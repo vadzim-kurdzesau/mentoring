@@ -6,6 +6,7 @@ public class Program
 {
     private static void Main()
     {
+        // String declaration
         string sourceMessage = "    Hello, World!    ";
 
         // Getting the string length
@@ -27,6 +28,19 @@ public class Program
 
         DemonstateStringTrimming(sourceMessage);
 
+        // String is passed by value to methods
+        Console.WriteLine(sourceMessage);
+
+        PrintSeparationLine();
+
+        //                                      Start index, number of characters to remove
+        string stringWithoutComma = sourceMessage.Remove(9, 1);
+        Console.WriteLine(stringWithoutComma);
+
+        //                                                Start index, string to insert
+        string stringWithInsertedString = stringWithoutComma.Insert(9, sourceMessage);
+        Console.WriteLine(stringWithInsertedString);
+
         PrintSeparationLine();
     }
 
@@ -36,10 +50,12 @@ public class Program
         string trimmedMessage = sourceMessage.Trim();
         Console.WriteLine($"The source message '{sourceMessage}' has been trimmed to '{trimmedMessage}'.");
 
-        string anotherMessage = "####SpamMessage###";
-        string anotherTrimmedMessage = anotherMessage.Trim('#');
-        Console.WriteLine(string.Format("The source message '{0}' has been trimmed to '{1}'.", anotherMessage, anotherTrimmedMessage));
+        sourceMessage = "####SpamMessage###";
+        string anotherTrimmedMessage = sourceMessage.Trim('#');
+        Console.WriteLine(string.Format("The source message '{0}' has been trimmed to '{1}'.", sourceMessage, anotherTrimmedMessage));
+        PrintSeparationLine();
     }
+
 
     private static void PrintSeparationLine()
     {

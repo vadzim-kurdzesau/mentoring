@@ -8,7 +8,7 @@ namespace StringConcatenationComparisons.Demo;
 public class StringConcatinationTests
 {
     private const char CharToConcat = 'A';
-    private const int BigNumberOfAppends = 20000000;
+    private const int BigNumberOfAppends = 20_000_000;
 
     [TestCaseSource(nameof(SmallTestData))]
     public void StringConcatenation_ShortData(int numberOfCharacters)

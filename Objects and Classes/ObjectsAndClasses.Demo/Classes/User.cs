@@ -7,8 +7,8 @@ public class User
     #region Class state
 
     public string firstName;
-
     public string lastName;
+
     #endregion
 
     #region Class behaviour

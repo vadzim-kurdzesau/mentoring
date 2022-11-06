@@ -5,6 +5,7 @@ namespace ObjectsAndClasses.Demo.Classes;
 public class Employee
 {
     #region Class state
+
     private string firstName;
     private string companyName;
 
@@ -44,6 +45,19 @@ public class Employee
     // Auto-implemented property
     public string LastName { get; set; }
 
+    public string FullName
+    {
+        get
+        {
+            if (LastName == null)
+            {
+                return GetFirstName();
+            }
+
+            return $"{GetFirstName()} {LastName}";
+        }
+    }
+
     public string CompanyName
     {
         get => companyName;
@@ -61,7 +75,7 @@ public class Employee
     // Methods
     public void Introduce()
     {
-        Console.WriteLine($"Hello, my name is {GetFirstName()} {LastName}. I work in \"{CompanyName}\".");
+        Console.WriteLine($"Hello, my name is {FullName}. I work in \"{CompanyName}\".");
     }
 
     #endregion

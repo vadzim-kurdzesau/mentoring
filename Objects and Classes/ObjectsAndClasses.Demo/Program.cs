@@ -6,7 +6,7 @@ internal class Program
 {
     public static void Main()
     {
-        #region Object initialization, default constructor
+        #region Object Initialization, Default Constructor
 
         User user = new User();
         user.firstName = "Vadzim";
@@ -16,14 +16,14 @@ internal class Program
 
         #endregion
 
-        #region Object creation without fields initialization
+        #region Object Creation Without Fields Initialization
 
         //User anotherUser = new User();
         //anotherUser.Introduce();
 
         #endregion
 
-        #region Use of costructors
+        #region Use of Costructors
 
         //Admin admin = new Admin("NotVadzim", "NotKurdzesau");
         //admin.Introduce();
@@ -32,7 +32,7 @@ internal class Program
 
         #endregion
 
-        #region Public access to fields
+        #region Public Access to Fields
 
         //admin.firstName = null;
         //admin.Introduce();
@@ -47,6 +47,20 @@ internal class Program
         //employee.SetFirstName("Vadzim");
         //employee.LastName = "Kurdzesau";
         //employee.Introduce();
+
+        #endregion
+
+        #region Static class members
+
+        //Manager firstManager = new Manager("Boss");
+        //firstManager.Introduce();
+
+        //Manager secondManager = new Manager("BigBoss");
+        //secondManager.Introduce();
+
+        //Manager.CompanyName = "Microsoft";
+        //firstManager.Introduce();
+        //secondManager.Introduce();
 
         #endregion
     }

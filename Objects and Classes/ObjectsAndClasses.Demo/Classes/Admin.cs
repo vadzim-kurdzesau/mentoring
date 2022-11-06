@@ -7,8 +7,8 @@ public class Admin
     #region Class state
 
     public string firstName;
-
     public string lastName;
+
     #endregion
 
     #region Class behaviour

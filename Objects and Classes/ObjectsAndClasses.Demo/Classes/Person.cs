@@ -2,7 +2,7 @@
 
 namespace ObjectsAndClasses.Demo.Classes;
 
-public class User
+public class Person
 {
     #region Class state
 

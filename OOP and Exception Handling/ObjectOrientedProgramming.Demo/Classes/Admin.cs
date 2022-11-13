@@ -1,30 +1,24 @@
 ﻿using System;
 
-namespace ObjectOrientedProgramming.Demo.Classes;
-
-public class Admin
+namespace Inheritance.Demo.Classes
 {
-    #region Class state
-
-    public string firstName;
-    public string lastName;
-
-    #endregion
-
-    #region Class behaviour
-
-    // Constructors
-    public Admin(string firstName, string lastName)
+    public class Admin : Employee
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+        public Admin(string firstName, string companyName)
+            : base(firstName, companyName)
+        {
+        }
 
-    // Methods
-    public void Introduce()
-    {
-        Console.WriteLine($"Hello, my name is {firstName} {lastName}.");
-    }
+        public Admin(string firstName, string lastName, string companyName)
+            : base(firstName, lastName, companyName)
+        {
+        }
 
-    #endregion
+        // Doesn't override the Introduce() method
+
+        public override void Work()
+        {
+            Console.WriteLine("Admin is working!");
+        }
+    }
 }

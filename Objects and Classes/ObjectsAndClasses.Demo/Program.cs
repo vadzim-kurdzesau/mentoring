@@ -8,7 +8,7 @@ internal class Program
     {
         #region Object Initialization, Default Constructor
 
-        User user = new User();
+        Person user = new Person();
         user.firstName = "Vadzim";
         user.lastName = "Kurdzesau";
 

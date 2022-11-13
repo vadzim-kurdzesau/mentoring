@@ -1,69 +1,25 @@
 ﻿using System;
 
-namespace ObjectOrientedProgramming.Demo.Classes;
-
-public class Manager
+namespace Inheritance.Demo.Classes
 {
-    private static string companyName;
-    private string firstName;
-
-    public static string CompanyName 
+    public class Manager : Employee
     {
-        get => companyName;
-        set
+        public Manager(string firstName, string companyName) : base(firstName, companyName)
         {
-            if (string.IsNullOrWhiteSpace(value))
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
-
-            companyName = value;
         }
-    }
 
-    public string FirstName
-    {
-        get => firstName;
-        set
+        public Manager(string firstName, string lastName, string companyName) : base(firstName, lastName, companyName)
         {
-            if (string.IsNullOrWhiteSpace(value))
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
-
-            firstName = value;
         }
-    }
 
-    public string LastName { get; set; }
-
-    public string FullName
-    {
-        get
+        public new void Introduce()
         {
-            return $"{FirstName}{(LastName == null ? string.Empty : $" {LastName}")}";
+            Console.WriteLine($"Hello, my name is {FullName}. I work in \"{CompanyName}\".");
         }
-    }
 
-    static Manager()
-    {
-        CompanyName = "EPAM";
-    }
-
-    public Manager(string firstName)
-        : this(firstName, null)
-    {
-    }
-
-    public Manager(string firstName, string lastName)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-    }
-
-    // Methods
-    public void Introduce()
-    {
-        Console.WriteLine($"Hello, my name is {FullName}. I work in \"{CompanyName}\".");
+        public override void Work()
+        {
+            Console.WriteLine("Manager is not working!");
+        }
     }
 }

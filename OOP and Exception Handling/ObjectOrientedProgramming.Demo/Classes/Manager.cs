@@ -14,7 +14,7 @@ namespace Inheritance.Demo.Classes
 
         public new void Introduce()
         {
-            Console.WriteLine($"Hello, my name is {FullName}. I work in \"{CompanyName}\".");
+            Console.WriteLine($"Hello, my name is {FullName}. I work in \"{CompanyName}\". I'm a manager.");
         }
 
         public override void Work()

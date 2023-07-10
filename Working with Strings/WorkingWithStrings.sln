@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringConcatenationComparis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringConcatenationComparisons.Benchmark", "StringConcatenationComparisons.Benchmark\StringConcatenationComparisons.Benchmark.csproj", "{55C52F7B-C9F2-4C37-AE9E-334F917D954F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithDateTime.Demo", "WorkingWithDateTime.Demo\WorkingWithDateTime.Demo.csproj", "{3CA94A2B-C8AE-41C8-9995-9022B90CF12F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithDateTime.Demo", "WorkingWithDateTime.Demo\WorkingWithDateTime.Demo.csproj", "{3CA94A2B-C8AE-41C8-9995-9022B90CF12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatting.Demo", "StringFormatting.Demo\StringFormatting.Demo.csproj", "{5B8CDBD3-54C9-415B-9CA4-2576928A9DC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3CA94A2B-C8AE-41C8-9995-9022B90CF12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA94A2B-C8AE-41C8-9995-9022B90CF12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA94A2B-C8AE-41C8-9995-9022B90CF12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8CDBD3-54C9-415B-9CA4-2576928A9DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8CDBD3-54C9-415B-9CA4-2576928A9DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8CDBD3-54C9-415B-9CA4-2576928A9DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8CDBD3-54C9-415B-9CA4-2576928A9DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

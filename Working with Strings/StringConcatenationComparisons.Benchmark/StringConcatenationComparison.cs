@@ -20,6 +20,9 @@ public class StringConcatenationComparison
     [Benchmark]
     public string StringBuilderConcatenation()
     {
+        StringBuilder stringBuilder = new StringBuilder();
+
+
         return Concat(new StringBuilder(), StringToConcat, Times);
     }
 

@@ -30,7 +30,7 @@ public class StringConcatinationTests
         }
     }
 
-    [Test, Timeout(20000)]
+    [Test, Timeout(20_000)]
     public void StringConcatenation_LongData()
     {
         string result = string.Empty;

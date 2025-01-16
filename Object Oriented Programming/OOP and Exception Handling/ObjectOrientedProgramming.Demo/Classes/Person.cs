@@ -2,7 +2,7 @@
 
 namespace Inheritance.Demo.Classes
 {
-    public abstract class Person
+    public class Person
     {
         private string firstName;
 

@@ -6,12 +6,12 @@ namespace Inheritance.Demo.Classes
     {
         private string companyName;
 
-        public Employee(string firstName, string companyName)
+        protected Employee(string firstName, string companyName)
             : this(firstName, null, companyName)
         {
         }
 
-        public Employee(string firstName, string lastName, string companyName)
+        protected Employee(string firstName, string lastName, string companyName)
             : base(firstName, lastName)
         {
             CompanyName = companyName;

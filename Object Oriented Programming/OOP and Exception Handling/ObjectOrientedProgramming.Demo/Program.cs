@@ -19,21 +19,25 @@ namespace Inheritance.Demo
             #region Admin doesn't override the Introduce() method - prints the Employee class version
 
             Admin admin = new Admin(firstName, lastName, company);
-            //admin.Introduce();
-            //admin.Work();
+            admin.Introduce();
+            admin.Work();
 
             #endregion
 
             #region Calling the Person Introduce() method version - output is the same (overrided version)
 
-            //((Person)admin).Introduce();
+            ((Person)admin).Introduce();
 
             #endregion
 
             #region Manager replaces the Introduce() method
-            
+
             Manager manager = new Manager(firstName, lastName, company);
-            //manager.Introduce();
+            manager.Introduce();
+
+            var person = (Person)manager;
+            person.Introduce();
+
             //manager.Work();
 
             #endregion
@@ -102,7 +106,7 @@ namespace Inheritance.Demo
         private static void PrintEmployee(Employee employee)
         {
             employee.Introduce();
-            employee.Work();
+            //employee.Work();
         }
     }
 }
